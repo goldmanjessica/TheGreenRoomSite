@@ -1,0 +1,420 @@
+html, body {
+   height: 100%;
+   margin:0px;
+   background-color: #fcfcfc;
+}
+
+/* Navigation Styles */ 
+
+.bg-light {
+	box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+	padding-left: 32px;
+	padding-right: 32px;
+	background-color: #fcfcfc !important;
+}
+
+.nav-item {
+	padding-left: 15px;
+	padding-right: 15px;
+	font-family: Libre Franklin;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 24px;
+
+}
+
+.nav-link {
+	color: #333333 !important;
+	text-decoration: none;
+}
+
+.nav-link:hover {
+    color: #59A958 !important;
+}
+
+ .active {
+	color: #59A958 !important;
+}
+
+
+/* Button Styles */ 
+
+.btn-primary {
+
+	width: 250px;
+	height: 48px;
+	border-radius: 25px;
+	border:none;
+	background: #59A958;
+	box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+}
+
+.btn-primary:hover {
+	background: #07593C;
+}
+
+.btn-center {
+	display: block;
+	margin: auto;
+}
+
+
+button a {
+	color: #FFFFFF;
+	font-weight: 500;
+	font-family: Libre Franklin;
+	font-style: normal;
+	font-size: 20px;
+	text-align: center;
+	letter-spacing: 0.03em;
+	margin-top: 32px;
+	vertical-align: middle;
+	text-decoration: none;
+	float: none;
+}
+
+button a:hover {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+/* HEADER STYLES */
+
+.header {
+
+	margin: 0 auto !important;
+	align-items: center;
+}
+
+
+
+
+/* IMAGE PARALLAX */
+
+
+
+/* Header Styles */ 
+
+#header-background {
+	width: 100%;
+	height: 100%;
+	background-image: url("../images/headerimage.png");
+	position: absolute;
+}
+
+#h3-white {
+	font-family: Cooper Black;
+	font-style: normal;
+	font-weight: 900;
+	font-size: 56px;
+	line-height: 64px;
+	text-align: center;
+	color: #FFFFFF;
+	margin-top: 130px;
+}
+
+
+
+h4, #h4-white {
+	margin-top: 50px;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+
+/* FONT STYLES */ 
+
+p {
+	font-family: Libre Franklin;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 20px;
+	line-height: 32px;
+	letter-spacing: 0.03em;
+	color: #333333;
+}
+
+h1 {
+	font-family: Cooper Black;
+	font-style: normal;
+	font-weight: 900;
+	font-size: 64px;
+	line-height: 70px;
+	color: #59A958;
+}
+
+h3 {
+	font-family: Libre Franklin;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 24px;
+	vertical-align: middle;
+	color: #333333;
+	
+}
+
+h4 {
+	font-family: Libre Franklin;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 18px;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: #333333;
+	text-align: left;
+	
+}
+
+h2 {
+	font-family: Libre Franklin;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	line-height: 44px;
+}
+
+
+
+
+/* Comic Cards */ 
+
+
+
+ .card, .card-img-top, .card-body{
+ 	border:none;
+ 	border-radius: 0px;
+ 	background-color: none;
+ }
+
+
+ .card-text {
+ 	font-family: Libre Franklin;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 28px;
+	/* display: flex;
+	align-items: center; */
+	letter-spacing: 0.03em;
+	color: #000000;
+ }
+
+
+
+ .card {
+ 	border:none;
+ 	box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+ }
+
+ .card-img-top {
+ 	border:none;
+ 	height: 220px;
+ 	border:none;
+ }
+
+
+
+
+/* OTHER STYLES */ 
+
+
+.col {
+	height: 750px;
+}
+
+h4 a {
+	float: none !important;
+}
+
+ a {
+ 	color: #59A958;
+ 	float: right;
+ 	font-weight: 500;
+	text-decoration: underline;
+ }
+
+ a:hover {
+ 	color: #2A630D;
+
+ }
+
+ #show-details {
+ 	margin-top: 120px;
+ 	margin-bottom: 120px;
+ }
+
+
+#about {
+	max-width: 100%;
+	margin: 0 auto;
+
+}
+
+#detail {
+	border-radius: 5px;
+	border-color: black;
+}
+
+
+#comics {
+	display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+/* NEWSLETTER STYLES */
+
+.newsletter {
+	padding: 80px 0;
+	background: #59A958;
+	width: 100%;
+}
+
+.newsletter .content {
+	max-width: 650px;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+	z-index: 2;
+}
+
+.newsletter .content h2 {
+	color: #243c4f;
+	margin-bottom: 40px;
+}
+
+
+.mc-field-group {
+	font-family: Libre Franklin;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 36px;
+	letter-spacing: 0.03em;
+	color: #FFFFFF;
+	
+}
+
+#mce-EMAIL{
+	width: 550px;
+	height: 48px;
+	left: 396.62px;
+	top: 6833px;
+	background: #FFFFFF;
+	border-radius: 25px 25px 25px 25px;
+	margin-bottom: 25px;
+	border:none;
+}
+
+#mce-EMAIL:focus{
+	outline:0;
+
+}
+
+.required-email {
+	padding-left: 15px;
+	font-family: Libre Franklin;
+	color: #333333;
+}
+
+.button {
+	background: #333333;
+	border-radius: 25px 25px 25px 25px;
+	width: 165px;
+	height: 48px;
+	font-family: Libre Franklin;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 17px;
+	line-height: 24px;
+	text-align: center;
+	letter-spacing: 0.05em;
+	color: #FFFFFF;
+	border: none;
+	text-transform: uppercase;
+}
+
+.button:focus {outline:0;}
+
+/* 
+
+.newsletter .content .mc-field-group {
+	border-color: #ffffff;
+	vertical-align: middle;
+}
+
+.newsletter .content.form-control:focus {
+	box-shadow: none;
+	border: 2px solid #243c4f;
+}
+
+.newsletter .content .btn {
+	width: 141.51px;
+	height: 48px;	
+	background: #333333;
+	border-radius: 0px 25px 25px 0px;
+	font-family: Libre Franklin;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 24px;
+	text-align: center;
+	letter-spacing: 0.05em;
+	color: #FFFFFF;
+	padding-left: 15px;
+	padding-right: 15px;
+	vertical-align: middle;
+
+} 
+
+*/ 
+
+/* Parallax Styles */
+
+
+
+/* Footer Styles */
+
+footer {
+	background-color: #333333;
+	padding: 50px;
+	text-align: center;
+}
+
+
+.footer-nav  a {
+	list-style-type: none;
+	font-family: Libre Franklin;
+	color: white;
+	text-decoration: none;
+	padding:15px;
+	float: none !important;
+	margin-right:30px;
+}
+
+.footer-nav a:hover {
+	color: lightgray;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social {
+  position: relative;
+  display: inline-block;
+  float: left;
+  padding: 10px;
+}
