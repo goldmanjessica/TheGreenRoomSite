@@ -1,12 +1,11 @@
-html, body {
-   height: 100%;
-   margin:0px;
-   background-color: #fcfcfc;
+
+html body {
+  scroll-behavior: smooth;
+  height: 100%;
+  margin:0px;
+  background-color: #fcfcfc;
 }
 
-html {
-  scroll-behavior: smooth;
-}
 
  #hero {
 	background-image: url('../images/headerimage.jpg');
@@ -18,15 +17,17 @@ html {
 } 
 
 
-#shows, #teaminsta, #about, #comics {
-	background-size: cover;
-	background-attachment: fixed;
-  	background-repeat: no-repeat;
-  	position: relative;
-  	overflow: hidden;
-}
-/* Navigation Styles */
+/* Navigation */
 
+
+  #hero {
+  background-image: url('../images/headerimage.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+} 
 
 .fixed-top {
     transition: all 0.25s ease-in;
@@ -40,31 +41,29 @@ html {
 }
 
 .nav-link {
-	text-decoration: none;
-	color: white;
-	font-family: Libre Franklin;
+  text-decoration: none;
+  color: white;
+  font-family: Libre Franklin;
 }
 
 .nav-link:hover {
-	color: #59A958;
+  color: #59A958;
 }
 
 .nav-item{
-	padding-left: 15px;
-	padding-right: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .navbar-fixed-top {
-	background: transparent;
+  background: transparent;
 }
-
 
 
 
 /* Button Styles */ 
 
 .btn-primary {
-
 	width: 250px;
 	height: 48px;
 	border-radius: 25px;
@@ -102,7 +101,7 @@ button a:hover {
 	text-decoration: none;
 }
 
-/* HEADER STYLES */
+/* INSTA TYTLE STYLES */
 
 .header {
 
@@ -218,6 +217,7 @@ h4, #h4-white {
 	color: #333333;
 	}
 }
+
 
 h1 {
 	font-family: Cooper Black;
@@ -348,10 +348,6 @@ h2 {
 }
 }
 
-.col {
-	height: 750px;
-}
-
 
 h4 a {
 	float: none !important;
@@ -472,38 +468,6 @@ h4 a {
 
 .button:focus {outline:0;}
 
-/* 
-
-.newsletter .content .mc-field-group {
-	border-color: #ffffff;
-	vertical-align: middle;
-}
-
-.newsletter .content.form-control:focus {
-	box-shadow: none;
-	border: 2px solid #243c4f;
-}
-
-.newsletter .content .btn {
-	width: 141.51px;
-	height: 48px;	
-	background: #333333;
-	border-radius: 0px 25px 25px 0px;
-	font-family: Libre Franklin;
-	font-style: normal;
-	font-weight: 500;
-	font-size: 20px;
-	line-height: 24px;
-	text-align: center;
-	letter-spacing: 0.05em;
-	color: #FFFFFF;
-	padding-left: 15px;
-	padding-right: 15px;
-	vertical-align: middle;
-
-} 
-
-*/ 
 
 /* Weed Fact Styles */
 
