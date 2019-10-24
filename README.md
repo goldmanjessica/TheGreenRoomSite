@@ -14,7 +14,7 @@ The Green Room is a 420 friendly stand-up show every 2nd and 4th Friday of the m
 ## Wireframes
 After a few rounds of sketches, I built out the wires, then the hi-fidelity designs, in Figma.
 
-![Wires](/finalproject/wires.png)
+![Wires](https://i.imgur.com/4P0OGX8.png)
 Format: ![Alt Text](url)
 
 ## Challenges
