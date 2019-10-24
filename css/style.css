@@ -4,38 +4,61 @@ html, body {
    background-color: #fcfcfc;
 }
 
-/* Navigation Styles */ 
-
-.bg-light {
-	box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
-	padding-left: 32px;
-	padding-right: 32px;
-	background-color: #fcfcfc !important;
+html {
+  scroll-behavior: smooth;
 }
 
-.nav-item {
-	padding-left: 15px;
-	padding-right: 15px;
-	font-family: Libre Franklin;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 15px;
-	line-height: 24px;
+ #hero {
+	background-image: url('../images/headerimage.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+  	background-repeat: no-repeat;
+  	position: relative;
+  	overflow: hidden;
+} 
 
+
+#shows, #teaminsta, #about, #comics {
+	background-size: cover;
+	background-attachment: fixed;
+  	background-repeat: no-repeat;
+  	position: relative;
+  	overflow: hidden;
+}
+/* Navigation Styles */
+
+
+.fixed-top {
+    transition: all 0.25s ease-in;
+}
+
+/* style for when sitcky is applied */
+.stuck .fixed-top {
+    background-color: #333 !important;
+    padding-top: 3px !important;
+    padding-bottom: 3px !important;
 }
 
 .nav-link {
-	color: #333333 !important;
 	text-decoration: none;
+	color: white;
+	font-family: Libre Franklin;
 }
 
 .nav-link:hover {
-    color: #59A958 !important;
+	color: #59A958;
 }
 
- .active {
-	color: #59A958 !important;
+.nav-item{
+	padding-left: 15px;
+	padding-right: 15px;
 }
+
+.navbar-fixed-top {
+	background: transparent;
+}
+
+
 
 
 /* Button Styles */ 
@@ -89,17 +112,23 @@ button a:hover {
 
 
 
-
 /* IMAGE PARALLAX */
 
 
+header {
+ 	background-size: cover;
+	background-attachment: fixed;
+  	background-repeat: no-repeat;
+  	position: relative;
+  	overflow: hidden;
+  	height: 600px;
+}
 
 /* Header Styles */ 
 
 #header-background {
 	width: 100%;
 	height: 100%;
-	background-image: url("../images/headerimage.png");
 	position: absolute;
 }
 
@@ -125,7 +154,48 @@ h4, #h4-white {
 
 /* FONT STYLES */ 
 
-p {
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+     p {
+	font-family: Libre Franklin;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 22px;
+	letter-spacing: 0.03em;
+	color: #333333;
+	}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+     p {
+	font-family: Libre Franklin;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.03em;
+	color: #333333;
+	}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+        p {
+	font-family: Libre Franklin;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 28px;
+	letter-spacing: 0.03em;
+	color: #333333;
+	}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+     p {
 	font-family: Libre Franklin;
 	font-style: normal;
 	font-weight: 300;
@@ -133,6 +203,20 @@ p {
 	line-height: 32px;
 	letter-spacing: 0.03em;
 	color: #333333;
+	}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    p {
+	font-family: Libre Franklin;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 20px;
+	line-height: 32px;
+	letter-spacing: 0.03em;
+	color: #333333;
+	}
 }
 
 h1 {
@@ -181,22 +265,36 @@ h2 {
 /* Comic Cards */ 
 
 
+.inner{
+    overflow: hidden;
+}
+ 
+.inner img{
+    transition: all 1.2s ease;
+}
+ 
+.inner:hover img{
+    transform: scale(1.2);
+}
 
- .card, .card-img-top, .card-body{
+.card, .card-img-top, .card-body{
  	border:none;
  	border-radius: 0px;
  	background-color: none;
  }
 
+.card-title {
+	font-size: 1.2em;
+}
 
  .card-text {
  	font-family: Libre Franklin;
 	font-style: normal;
 	font-weight: 300;
-	font-size: 18px;
+	font-size: 1em;
 	line-height: 28px;
-	/* display: flex;
-	align-items: center; */
+	/* display: flex; */
+	align-items: center; 
 	letter-spacing: 0.03em;
 	color: #000000;
  }
@@ -205,7 +303,6 @@ h2 {
 
  .card {
  	border:none;
- 	box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
  }
 
  .card-img-top {
@@ -220,9 +317,41 @@ h2 {
 /* OTHER STYLES */ 
 
 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .col {
+    height: 300px;
+}
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+            .col {
+    height: 300px;
+}
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+        .col {
+    height: 550px;
+}
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .col {
+    height: 750px;
+}
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .col {
+    height: 750px;
+}
+}
+
 .col {
 	height: 750px;
 }
+
 
 h4 a {
 	float: none !important;
@@ -258,11 +387,7 @@ h4 a {
 }
 
 
-#comics {
-	display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
+
 
 .centered {
   position: absolute;
@@ -305,7 +430,7 @@ h4 a {
 	
 }
 
-#mce-EMAIL{
+#mceEmail{
 	width: 550px;
 	height: 48px;
 	left: 396.62px;
@@ -314,9 +439,10 @@ h4 a {
 	border-radius: 25px 25px 25px 25px;
 	margin-bottom: 25px;
 	border:none;
+	box-shadow: inset 1px 1px 8px rgba(196, 196, 196, 0.9);
 }
 
-#mce-EMAIL:focus{
+#mceEmail:focus{
 	outline:0;
 
 }
@@ -379,8 +505,49 @@ h4 a {
 
 */ 
 
-/* Parallax Styles */
+/* Weed Fact Styles */
 
+#heading, #fact-js{
+	text-align: center;
+	margin: 2%;
+}
+
+
+#weed-fact {
+	height: 600px;
+	background-image: url('../images/upcomingshows.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+  	background-repeat: no-repeat;
+  	position: relative;
+  	overflow: hidden;
+  	max-width: 100%;
+	margin: 0 auto;
+}
+
+ #fact-btn {
+	width: 250px;
+	height: 48px;
+	border-radius: 25px;
+	border:none;
+	background: #59A958;
+	box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+	color: #FFFFFF;
+	font-weight: 500;
+	text-decoration: none;
+	font-family: Libre Franklin;
+	font-style: normal;
+	font-size: 20px;
+	text-align: center;
+	letter-spacing: 0.03em;
+	margin-top: 32px;
+}
+
+
+.fact-container {
+
+	text-align: center;
+}
 
 
 /* Footer Styles */

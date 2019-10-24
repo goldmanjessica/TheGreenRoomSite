@@ -32,11 +32,42 @@
 
 <body>
 
-
+<div id="hero" class="img-fluid">
 
 <!-- NAVIGATION -->
 
-     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" style="background-color:white; height: 64px;background-color: #fcfcfc;">
+<span class="position-absolute trigger"><!-- hidden trigger to apply 'stuck' styles --></span>
+<nav class="navbar navbar-expand-sm fixed-top py-2">
+    <div class="container">
+        
+        <a class="navbar-brand" href="#"><img src="images/logowhite.png" style="height:36px;"></a>
+        
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar1">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar1">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#shows">SHOWS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">ABOUT</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#comics">COMICS</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#team">TEAM</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#insta">INSTA</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+   <!--  <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color:white; height: 64px;background-color: #fcfcfc;">
         <a class="navbar-brand" href="#">
             <img src="images/logo.png" alt="The Green Room LA" style="height: 32px;">
         </a>
@@ -65,17 +96,24 @@
       </div>
     </nav>
 
+    -->
+
 
 <!-- HEADER -->
 
-    <div class="container-fluid parallax" style="width: 100%;height:100%;background-image: url('images/headerimage.jpg'); background-size: cover;">
+    <div class="container-fluid parallax" style="width: 100%;height:100%;">
         <div class="row">
             <div class="col d-flex align-items-center text-center">
                 <div class="top-header" style="box-shadow: 4px 4px 15px rgba(51, 51, 51, 0.5);">
                     <h3 id="h3-white" style="margin-left: 200px;margin-right: 200px;">Your friendly neighborhood standup show, with a twist*</h3>
                     <br> 
                     <h2 style="color: white;text-align: center;">Come join the rotation.</h2>
-                    <button class="btn btn-primary btn-center" style="margin-top: 75px;"> <a href="https://www.eventbrite.com/e/the-green-room-tickets-76857610181">GET TICKETS</a> </button>
+                    <button class="btn btn-primary btn-center" style="margin-top: 75px;"> 
+						<div class="c-ripple js-ripple">
+    						<span class="c-ripple__circle"></span>
+  						</div>
+                    	<a href="https://www.eventbrite.com/e/the-green-room-tickets-76857610181">GET TICKETS</a> 
+                    </button>
                     <br> 
                     <h4 id="h4-white">*420 friendly</h4>
                 </div>
@@ -83,6 +121,7 @@
         </div>
     </div>
 
+</div>
 
 <!-- UPCOMING SHOWS -->
 
@@ -127,16 +166,22 @@
 
 <!-- IMAGE *ADD PARALLAX*-->
 
-<div class="image-full">
-    <img src="images/image1.jpg">
-</div>
+  <header style="background-image: url(images/image1.jpg);">
+    <div class="container text-center"></div>
+  </header>
+
+
+  <!--  <div class="image-full">
+      <img class="img-fluid" src="images/image1.jpg">
+  </div>
+  -->
 
 
 <!-- ABOUT -->
-<div id="about">
+<div id="about" style="background-image: url(images/about.jpg)">
   <div class="container-fluid">
       <div class="row">
-          <div class="col d-flex align-items-center" style="background-image: url(images/about.jpg)">
+          <div class="col d-flex align-items-center">
               <div class="centered" style="width: 50%">
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
                   <br>
@@ -152,8 +197,10 @@
 
 <!-- COMEDIAN SPOTLIGHT -->
 
-<div id="comics">
-  <div class="container-fluid" style="background-image: url(images/comedianspotlight.jpg)">
+
+
+<div id="comics" style="background-image: url(images/comedianspotlight.jpg)">
+  <div class="container-fluid">
     <div class="row">
         <div class="col-sm d-flex align-items-center">
           <div class="something" style="margin: 0 auto;">
@@ -162,25 +209,35 @@
           </div>
         </div>
     </div>
+
         <div class="card-deck" style="justify-content: center;padding-bottom: 100px;">
-          <div class="card" style="max-width: 352px;">
-            <img class="card-img-top" src="images/fizaa.png" style="max-height: 257px;" alt="Card image cap">
+          <div class="card shadow" style="max-width: 352px;">
+            <div class="view overlay">
+            	<div class="inner">
+            		<img class="img-fluid" src="images/fizaa.png" style="max-height: 257px;" alt="Card image cap">
+            	</div>
+            </div>
+
             <div class="card-body">
               <h3 class="card-title">Fizaa Dosani</h3>
               <p class="card-text">A little blurb about said comic to go in this sentence right here.</p>
               <p class="card-text"><small class="text-muted"> <a href="https://us.blastingnews.com/lifestyle/2018/06/interview-with-writer-and-actor-fizaa-dosani-002637349.html" target="_blank">READ MORE</a></small></p>
             </div>
           </div>
-          <div class="card" style="max-width: 352px;">
-            <img class="card-img-top" src="images/willie.png" alt="Card image cap">
+          <div class="card shadow" style="max-width: 352px;">
+            <div class="inner">
+            	<img class="img-fluid" src="images/willie.png" alt="Card image cap">
+            </div>
             <div class="card-body">
               <h3 class="card-title">Willie Mac</h3>
               <p class="card-text">A little blurb about said comic to go in this sentence right here.</p>
               <p class="card-text"><small class="text-muted"> <a href="https://secondchances.gregbaldwin.co/2019/01/28/willie-maccs-second-chance/" target="_blank">READ MORE</a></small></p>
             </div>
           </div>
-          <div class="card" style="max-width: 352px;">
-            <img class="card-img-top" src="images/tenere.png" alt="Card image cap">
+          <div class="card shadow" style="max-width: 352px;">
+            <div class="inner">
+				<img class="img-fluid" src="images/tenere.png" alt="Card image cap">
+			</div>
             <div class="card-body">
               <h3 class="card-title">Tenere Williams</h3>
               <p class="card-text">A little blurb about said comic to go in this sentence right here.</p>
@@ -188,14 +245,15 @@
             </div>
           </div>
         </div>
-  </div>
-</div>
+  </div --> 
+
+</div> 
 
 <!-- IMAGE *ADD PARALLAX*-->
 
-<div class="img-fluid" alt="Responsive image">
-    <img src="images/image2.png">
-</div>
+<header style="background-image: url(images/image2.png);">
+    <div class="container text-center"></div>
+  </header>
 
 
 <!-- INSTAGRAM-->
@@ -212,25 +270,37 @@
           </div>
       </div>
           <div class="card-deck" style="justify-content: center;padding-bottom: 32px;">
-            <div class="card" style="max-width: 250px;">
-              <img class="card-img-top" src="images/insta6.png" alt="Card image cap">
+            <div class="card shadow" style="max-width: 250px;">
+             	<div class="inner">
+            		<img class="card-img-top" src="images/insta6.png" alt="Card image cap">
+				</div>
             </div>
             <div class="card" style="max-width: 250px;">
-              <img class="card-img-top" src="images/insta3.png" alt="Card image cap">
+              <div class="inner">
+              	<img class="card-img-top" src="images/insta3.png" alt="Card image cap">
+              </div>
             </div>
             <div class="card" style="max-width: 250px;">
-              <img class="card-img-top" src="images/insta5.png" alt="Card image cap">
+              	<div class="inner">
+              		<img class="card-img-top" src="images/insta5.png" alt="Card image cap">
+              	</div>
             </div>
           </div>
            <div class="card-deck" style="justify-content: center;padding-bottom: 75px;">
             <div class="card" style="max-width: 250px;">
-              <img class="card-img-top" src="images/insta7.png" alt="Card image cap">
+              	<div class="inner">	
+              		<img class="card-img-top" src="images/insta7.png" alt="Card image cap">
+              	</div>
             </div>
             <div class="card" style="max-width: 250px;">
-              <img class="card-img-top" src="images/insta2.png" alt="Card image cap">
+              	<div class="inner">
+              		<img class="card-img-top" src="images/insta2.png" alt="Card image cap">
+              	</div>
             </div>
             <div class="card" style="max-width: 250px;">
-              <img class="card-img-top" src="images/insta4.png" alt="Card image cap">
+            	<div class="inner">
+              		<img class="card-img-top" src="images/insta4.png" alt="Card image cap">
+              	</div>
             </div>
           </div>
           <button class="btn btn-primary btn-center" style="margin-bottom: 25px;"> <a href="http://www.instagram.com/TheGreenRoomLA">FOLLOW US</a> </button>
@@ -278,9 +348,27 @@
 
 <!-- IMAGE *ADD PARALLAX*-->
 
-<div class="image-full parallax-window">
-    <img src="images/image3.png">
-</div>
+<header style="background-image: url(images/image3.png);">
+    <div class="container text-center"></div>
+  </header>
+
+
+<!-- WEED FACT GENERATOR -->
+
+<section id="weed-fact">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 centered">
+			 	<div class="fact-container">
+				    <h1 id="heading">Weed Fact</h1>
+				    <p id="fact-js" class="fact-display">The first thing ever bought and sold across the Internet was a bag of cannabis around 1971.</p>
+				    <button id="fact-btn"> NEW FACT</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
 
 
 <!-- THE NEWSLETTER -->
@@ -289,11 +377,11 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-12">
-        <div class="content">
+        <div class="content"> 
           <h1 style="color: white;padding-left: 64px;">The Newsletter</h1>
           <img src="images/linewhite.svg" style="padding-bottom: 25px;">
           <p style="color: white;padding-bottom: 32px;">Sign up for show updates, comic spotlights, deals and more.</p>
-        
+       
 
 <!-- Begin Mailchimp Signup Form -->
 
@@ -302,7 +390,7 @@
             <div id="mc_embed_signup_scroll">
                 <div class="mc-field-group">
                   <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span></label>
-                  <input type="email" value="" name="EMAIL" class="required-email" id="mce-EMAIL"> 
+                  <input type="email" value="" name="EMAIL" class="required-email" id="mceEmail"> 
                   </input>
                 </div>
 
@@ -316,6 +404,8 @@
             </div>
           </form>
         </div>
+
+    </div>
 
         <!--- <div class="input-group">
                <input type="email" class="form-control" placeholder="Enter your email">
